@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vashista Model High School || Photo Gallery</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Browse through the Vashista Model High School photo gallery, highlighting our smart classrooms, science labs, green campus, and sports events.">
+  <meta name="keywords" content="Vashista school gallery, school photo gallery, classrooms pictures, school laboratory photos">
+  <meta name="author" content="Vashista Model High School">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=32&h=32&q=80" type="image/x-icon">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-info">
+        <span><i class="fa-solid fa-phone"></i> +91 98494 43138</span>
+        <span><i class="fa-solid fa-envelope"></i> vashista_mhs@yahoo.co.in</span>
+      </div>
+      <div class="top-links">
+        <a href="http://school.login1.in/login/VMHS-RRD-1016" target="_blank"><i class="fa-solid fa-user-tie"></i> Employee Login</a>
+        <a href="http://student.login1.in/login/VMHS-RRD-1016" target="_blank"><i class="fa-solid fa-user-graduate"></i> Student / Parent Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=120&h=120&q=80" alt="Vashista Model High School Logo" class="logo-img" style="border-radius: 50%;">
+        <div class="logo-text">
+          <span class="logo-title">VASHISTA</span>
+          <span class="logo-subtitle">Model High School</span>
+        </div>
+      </a>
+      
+      <nav class="nav-menu">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About Us</a></div>
+        <div class="nav-item"><a href="principal.html" class="nav-link">Principal Info</a></div>
+        <div class="nav-item"><a href="fee.html" class="nav-link">Fee Structure</a></div>
+        <div class="nav-item active"><a href="gallery.html" class="nav-link">Photo Gallery</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+        <div class="nav-item" style="margin-left: 1rem;">
+          <a href="admission.html" class="btn btn-accent" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;"><i class="fa-solid fa-file-signature"></i> Admissions</a>
+        </div>
+      </nav>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Hero / Banner -->
+  <section class="section" style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80') center center / cover; color: white; padding: 4rem 0; text-align: center;">
+    <div class="container">
+      <h1 style="color: white; font-size: 3rem; margin-bottom: 0.5rem;">Photo Gallery</h1>
+      <p style="font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">Take a visual tour of our campus life, smart classrooms, laboratories, and student activities.</p>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Grid -->
+  <section class="section container">
+    <!-- Filter Buttons -->
+    <div class="gallery-filter reveal">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="campus">Green Campus</button>
+      <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+      <button class="filter-btn" data-filter="lab">Laboratories</button>
+      <button class="filter-btn" data-filter="activities">Sports & Activities</button>
+    </div>
+
+    <!-- Masonry-like Grid -->
+    <div class="gallery-grid reveal">
+      <!-- Item 1 -->
+      <div class="gallery-item" data-category="campus">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80" alt="Beautiful School Campus">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">School Building</h4>
+          <span class="gallery-item-category">Green Campus</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item" data-category="classrooms">
+        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="Smart digital classrooms">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Interactive Smart Class</h4>
+          <span class="gallery-item-category">Classrooms</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item" data-category="lab">
+        <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=600&q=80" alt="Students in Chemistry lab">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Integrated Science Lab</h4>
+          <span class="gallery-item-category">Laboratories</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item" data-category="activities">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Kids playing sports">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Outdoor Badminton & Volleyball</h4>
+          <span class="gallery-item-category">Sports & Activities</span>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="gallery-item" data-category="classrooms">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Active student learning">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Primary Section Room</h4>
+          <span class="gallery-item-category">Classrooms</span>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="gallery-item" data-category="lab">
+        <img src="https://images.unsplash.com/photo-1516534775068-ba3e84589d90?auto=format&fit=crop&w=600&q=80" alt="IT lab class">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Computer & Coding Lab</h4>
+          <span class="gallery-item-category">Laboratories</span>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="gallery-item" data-category="activities">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Student physical drill">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Annual Day Safety Drills</h4>
+          <span class="gallery-item-category">Sports & Activities</span>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="gallery-item" data-category="campus">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80" alt="School library study space">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Quiet Reference Library</h4>
+          <span class="gallery-item-category">Green Campus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img src="" class="lightbox-img" alt="Enlarged View">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Column 1: School Info -->
+      <div class="footer-col">
+        <div class="logo-link" style="margin-bottom: 1rem;">
+          <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=60&h=60&q=80" alt="Vashista Logo" style="border-radius: 50%; height: 40px;">
+          <div class="logo-text">
+            <span class="logo-title" style="color: white; font-size: 1.15rem;">VASHISTA</span>
+            <span class="logo-subtitle" style="font-size: 0.65rem;">Model High School</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Providing high-quality educational systems designed to focus on the child's academic excellence, physical fitness, and mental growth.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="principal.html">Principal Info</a>
+          <a href="fee.html">Fee Structure</a>
+          <a href="gallery.html">Photo Gallery</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Column 3: Portals -->
+      <div class="footer-col">
+        <h3>Online Portals</h3>
+        <div class="footer-links">
+          <a href="http://student.login1.in/login/VMHS-RRD-1016" target="_blank">Parent Login</a>
+          <a href="http://student.login1.in/login/VMHS-RRD-1016" target="_blank">Student Login</a>
+          <a href="http://school.login1.in/login/VMHS-RRD-1016" target="_blank">Employee Login</a>
+          <a href="admission.html">Enquiry Form</a>
+        </div>
+      </div>
+      
+      <!-- Column 4: Contact Details -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ragannaguda, Sagar Road,<br>Ranga Reddy District,<br>Hyderabad, TS - 501510</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98494 43138<br>+91 84152 01581</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>vashista_mhs@yahoo.co.in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Vashista Model High School. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#" style="opacity: 0.8;">Privacy Policy</a>
+        <a href="#" style="opacity: 0.8;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
