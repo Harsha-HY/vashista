@@ -210,11 +210,14 @@ document.addEventListener('DOMContentLoaded', () => {
     galleryItems.forEach((item) => {
       item.addEventListener('click', () => {
         const img = item.querySelector('img');
-        const title = item.querySelector('.gallery-item-title').textContent;
-        const category = item.querySelector('.gallery-item-category').textContent;
+        const titleEl = item.querySelector('.gallery-item-title');
+        const categoryEl = item.querySelector('.gallery-item-category');
+        
+        const title = titleEl ? titleEl.textContent : (img ? img.alt : '');
+        const category = categoryEl ? categoryEl.textContent : '';
 
         lightboxImg.src = img.src;
-        lightboxCaption.textContent = `${title} (${category})`;
+        lightboxCaption.textContent = category ? `${title} (${category})` : title;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden'; // Lock background scroll
       });
