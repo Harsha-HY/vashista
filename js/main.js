@@ -1,5 +1,5 @@
 /*
-  Vashista Model High School - Modern Interactions & Functionality
+  Vasista Model High School - Modern Interactions & Functionality
 */
 
 document.addEventListener('DOMContentLoaded', () => {
