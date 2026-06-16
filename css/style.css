@@ -1344,6 +1344,54 @@ footer {
   transform: translateY(0);
 }
 
+/* 13.5 Navigation Dropdown Menu (Desktop Layout) */
+@media (min-width: 1025px) {
+  .nav-item.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 0.5rem 0;
+    min-width: 230px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1.25rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--bg-offset);
+    color: var(--primary);
+  }
+}
+
 /* 14. Responsive Media Queries */
 @media (max-width: 1024px) {
   .bento-grid {
